@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="java-guidelines"
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+  <description>Curated PMD rules from java-guidelines/CLAUDE.md section 13.</description>
+
+  <rule ref="category/java/bestpractices.xml/UseEnumCollections"/>
+  <rule ref="category/java/bestpractices.xml/LooseCoupling"/>
+  <rule ref="category/java/bestpractices.xml/SimplifiableTestAssertion"/>
+  <rule ref="category/java/bestpractices.xml/UnusedAssignment"/>
+  <rule ref="category/java/bestpractices.xml/UseTryWithResources"/>
+  <rule ref="category/java/bestpractices.xml/UseStandardCharsets"/>
+  <rule ref="category/java/bestpractices.xml/RelianceOnDefaultCharset"/>
+  <rule ref="category/java/bestpractices.xml/PrimitiveWrapperInstantiation"/>
+  <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach"/>
+  <rule ref="category/java/bestpractices.xml/DoubleBraceInitialization"/>
+  <rule ref="category/java/bestpractices.xml/ExhaustiveSwitchHasDefault"/>
+  <rule ref="category/java/bestpractices.xml/NonExhaustiveSwitch"/>
+  <rule ref="category/java/bestpractices.xml/UnnecessaryVarargsArrayCreation"/>
+  <rule ref="category/java/bestpractices.xml/UnnecessaryWarningSuppression"/>
+  <rule ref="category/java/bestpractices.xml/UseCollectionIsEmpty"/>
+  <rule ref="category/java/bestpractices.xml/ReplaceVectorWithList"/>
+  <rule ref="category/java/bestpractices.xml/ReplaceHashtableWithMap"/>
+  <rule ref="category/java/bestpractices.xml/ReplaceEnumerationWithIterator"/>
+
+  <rule ref="category/java/codestyle.xml/UseDiamondOperator"/>
+  <rule ref="category/java/codestyle.xml/LambdaCanBeMethodReference"/>
+  <rule ref="category/java/codestyle.xml/UnnecessaryModifier"/>
+  <rule ref="category/java/codestyle.xml/UnnecessaryFullyQualifiedName"/>
+  <rule ref="category/java/codestyle.xml/VariableCanBeInlined"/>
+  <rule ref="category/java/codestyle.xml/UnnecessaryBoxing"/>
+
+  <rule ref="category/java/design.xml/InstantiableUtilityClass"/>
+  <rule ref="category/java/design.xml/CognitiveComplexity"/>
+  <rule ref="category/java/design.xml/NPathComplexity"/>
+  <rule ref="category/java/design.xml/GodClass"/>
+
+  <rule ref="category/java/errorprone.xml/ReplaceJavaUtilDate"/>
+  <rule ref="category/java/errorprone.xml/ReplaceJavaUtilCalendar"/>
+  <rule ref="category/java/errorprone.xml/UseLocaleWithCaseConversions"/>
+  <rule ref="category/java/errorprone.xml/UnsupportedJdkApiUsage"/>
+  <rule ref="category/java/errorprone.xml/ReturnEmptyCollectionRatherThanNull"/>
+  <rule ref="category/java/errorprone.xml/ImplicitSwitchFallThrough"/>
+</ruleset>

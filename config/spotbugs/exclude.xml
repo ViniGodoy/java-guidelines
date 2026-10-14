@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+  <!-- CLAUDE.md section 13: EI_EXPOSE_REP / EI_EXPOSE_REP2 misfire on records and Spring beans even
+       with defensive copies (spotbugs/spotbugs#3022). -->
+  <Match>
+    <Bug pattern="EI_EXPOSE_REP,EI_EXPOSE_REP2"/>
+  </Match>
+  <!-- Generated Jakarta Persistence static metamodel (hibernate-processor): its public static
+       attribute fields are unused until a criteria query references them. -->
+  <Match>
+    <Class name="~.*_"/>
+    <Bug pattern="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD"/>
+  </Match>
+</FindBugsFilter>
